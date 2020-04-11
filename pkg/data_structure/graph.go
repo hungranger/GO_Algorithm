@@ -53,7 +53,6 @@ func (g *Graph) AddEdge(source Node, destination Node) {
 	s := g.getNode(source.id)
 	d := g.getNode(destination.id)
 	s.AddAdjacent(d)
-	s.String()
 }
 
 func (g *Graph) HasPathDFS(source Node, destination Node) bool {
